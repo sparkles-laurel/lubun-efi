@@ -1,9 +1,10 @@
 use core::format_args;
 use uefi::{Guid, guid};
 
+#[allow(unused)]
 #[derive(Debug)]
 pub struct CfgTableType(uefi::Guid);
-
+#[allow(unused)]
 pub const UEFI_MEMORY_ATTRIBUTES_TABLE: Guid = guid!("dcfa911d-26eb-469f-a220-38b7dc461220");
 
 impl From<Guid> for CfgTableType {

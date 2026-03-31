@@ -5,6 +5,7 @@ mod cfg_table_type;
 mod identity_acpi_handler;
 mod kernel_args;
 // Use the abstracted log interface for console output
+#[allow(unused_imports)]
 use log::{error, info, warn};
 
 // Import a bunch of commonly-used UEFI symbols exported by the crate

@@ -68,6 +68,7 @@ impl KernelArgs {
         (self.acpi_ptr, self.acpi_ver)
     }
 
+    #[allow(unused)]
     /// Returns the SMBIOS pointer and version as a pair
     pub fn get_smbios(&self) -> (*const c_void, u8) {
         (self.smbios_ptr, self.smbios_ver)
