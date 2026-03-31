@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build and Run with QEMU",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "${workspaceFolder}/qemu-testing/runtest.sh",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cargo build",
+        }
+    ]
+}

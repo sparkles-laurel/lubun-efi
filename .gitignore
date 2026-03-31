@@ -1,1 +1,3 @@
 /target
+/qemu-testing/*.log
+/qemu-testing/esp/EFI/BOOTX64.EFI

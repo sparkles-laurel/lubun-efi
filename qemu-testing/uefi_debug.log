@@ -52,7 +52,7 @@ Select Item: 0xE
 Cache FwCfg Name: BootMenu Item:0xE Size: 0x2 
 QemuFwCfgInitCache Pass!!!
 CMOS:
-00: 45 00 38 00 08 00 03 31 03 26 26 02 00 80 00 00
+00: 43 00 10 00 09 00 03 31 03 26 26 02 00 80 00 00
 10: 00 00 F0 00 06 80 02 FF FF 2F 00 00 04 10 FF FF
 20: C8 00 04 3F 00 00 00 00 00 00 00 00 00 00 00 00
 30: FF FF 20 00 00 0F 00 20 30 00 00 00 00 12 00 00
@@ -2604,8 +2604,8 @@ FSOpen: Open '\EFI\BOOT\BOOTX64.EFI' Success
 [Security] 3rd party image[0] can be loaded after EndOfDxe: PciRoot(0x0)/Pci(0x1F,0x2)/Sata(0x0,0xFFFF,0x0)/HD(1,MBR,0xBE1AFDFA,0x3F,0xFBFC1)/\EFI\BOOT\BOOTX64.EFI.
 None of Tcg2Protocol/CcMeasurementProtocol is installed.
 InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B A4BC840
-ConvertPages: failed to find range 140000000 - 140011FFF
-Loading driver at 0x00009CC5000 EntryPoint=0x00009CC6000 uefiloader-8cfcbf391a8a6556.efi
+ConvertPages: failed to find range 140000000 - 140015FFF
+Loading driver at 0x00009CBE000 EntryPoint=0x00009CBF3B0 uefiloader-8cfcbf391a8a6556.efi
 InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF A535198
 ProtectUefiImageCommon - 0xA4BC840
-  - 0x0000000009CC5000 - 0x0000000000012000
+  - 0x0000000009CBE000 - 0x0000000000016000
