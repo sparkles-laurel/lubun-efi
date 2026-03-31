@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+acpi = "4"
 log = "0.4"
 uefi = "0.24"
 uefi-services = "0.21"

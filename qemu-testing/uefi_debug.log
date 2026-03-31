@@ -52,7 +52,7 @@ Select Item: 0xE
 Cache FwCfg Name: BootMenu Item:0xE Size: 0x2 
 QemuFwCfgInitCache Pass!!!
 CMOS:
-00: 43 00 10 00 09 00 03 31 03 26 26 02 00 80 00 00
+00: 40 00 42 00 17 00 03 31 03 26 26 02 00 80 00 00
 10: 00 00 F0 00 06 80 02 FF FF 2F 00 00 04 10 FF FF
 20: C8 00 04 3F 00 00 00 00 00 00 00 00 00 00 00 00
 30: FF FF 20 00 00 0F 00 20 30 00 00 00 00 12 00 00
@@ -2609,3 +2609,443 @@ Loading driver at 0x00009CBE000 EntryPoint=0x00009CBF3B0 uefiloader-8cfcbf391a8a
 InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF A535198
 ProtectUefiImageCommon - 0xA4BC840
   - 0x0000000009CBE000 - 0x0000000000016000
+Image Return Status = Success
+[Bds] Booting Boot Manager Menu.
+[Bds]Stop Hotkey Service!
+Memory  Previous  Current    Next   
+ Type    Pages     Pages     Pages  
+======  ========  ========  ========
+  0A    00000080  0000002A  00000080
+  09    00000012  0000000B  00000012
+  00    00000080  00000039  00000080
+  05    00000100  0000003E  00000100
+  06    00000100  0000006C  00000100
+[Bds]Booting BootManagerMenuApp
+[Bds] Expand Fv(7CB8BDC9-F8EB-4F34-AAEA-3EE4AF6516A1)/FvFile(EEC25BDC-67F2-4D95-B1D5-F81B2039D11D) -> Fv(7CB8BDC9-F8EB-4F34-AAEA-3EE4AF6516A1)/FvFile(EEC25BDC-67F2-4D95-B1D5-F81B2039D11D)
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B A4BE040
+Loading driver at 0x00009CC6000 EntryPoint=0x00009CD2E40 BootManagerMenuApp.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 9CF9E98
+ProtectUefiImageCommon - 0xA4BE040
+  - 0x0000000009CC6000 - 0x000000000000FF80
+!!!!!!!!  Image Section Alignment(0x40) does not match Required Alignment (0x1000)  !!!!!!!!
+ProtectUefiImage failed to create image properties record
+PciSioSerial: Create SIO child serial device - Device Error
+ BlockSize : 2048 
+ LastBlock : 0 
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+ BlockSize : 512 
+ LastBlock : FBFFF 
+PciSioSerial: Create SIO child serial device - Device Error
+ BlockSize : 2048 
+ LastBlock : 0 
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+ BlockSize : 512 
+ LastBlock : FBFFF 
+PciSioSerial: Create SIO child serial device - Device Error
+ BlockSize : 512 
+ LastBlock : FBFFF 
+ BlockSize : 2048 
+ LastBlock : 0 
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+PixelBlueGreenRedReserved8BitPerColor
+PixelBlueGreenRedReserved8BitPerColor
+Memory  Previous  Current    Next   
+ Type    Pages     Pages     Pages  
+======  ========  ========  ========
+  0A    00000080  0000002A  00000080
+  09    00000012  0000000B  00000012
+  00    00000080  00000039  00000080
+  05    00000100  0000003E  00000100
+  06    00000100  0000006C  00000100
+[Bds]Booting EFI Firmware Setup
+[Bds] Expand Fv(7CB8BDC9-F8EB-4F34-AAEA-3EE4AF6516A1)/FvFile(462CAA21-7614-4503-836E-8AB6F4662331) -> Fv(7CB8BDC9-F8EB-4F34-AAEA-3EE4AF6516A1)/FvFile(462CAA21-7614-4503-836E-8AB6F4662331)
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B A4BD1C0
+Loading driver at 0x00009C7E000 EntryPoint=0x00009C96FC0 UiApp.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 9CF9B98
+ProtectUefiImageCommon - 0xA4BD1C0
+  - 0x0000000009C7E000 - 0x0000000000023EC0
+!!!!!!!!  Image Section Alignment(0x40) does not match Required Alignment (0x1000)  !!!!!!!!
+ProtectUefiImage failed to create image properties record
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B A4BC918
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 9CA13D8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 9CA1310
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 9CA1358
+PciSioSerial: Create SIO child serial device - Device Error
+ BlockSize : 2048 
+ LastBlock : 0 
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+ BlockSize : 512 
+ LastBlock : FBFFF 
+PciSioSerial: Create SIO child serial device - Device Error
+ BlockSize : 2048 
+ LastBlock : 0 
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+ BlockSize : 512 
+ LastBlock : FBFFF 
+PciSioSerial: Create SIO child serial device - Device Error
+ BlockSize : 512 
+ LastBlock : FBFFF 
+ BlockSize : 2048 
+ LastBlock : 0 
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 9CA12C0
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 9CA12F8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 9CA12A0
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 9C9AA18
+PixelBlueGreenRedReserved8BitPerColor
+PciSioSerial: Create SIO child serial device - Device Error
+ BlockSize : 2048 
+ LastBlock : 0 
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+ BlockSize : 512 
+ LastBlock : FBFFF 
+PciSioSerial: Create SIO child serial device - Device Error
+ BlockSize : 2048 
+ LastBlock : 0 
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+ BlockSize : 512 
+ LastBlock : FBFFF 
+PciSioSerial: Create SIO child serial device - Device Error
+ BlockSize : 512 
+ LastBlock : FBFFF 
+ BlockSize : 2048 
+ LastBlock : 0 
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+AHCI: Error interrupt reported PxIS: 40000000
+Non data transfer failed at retry 0
+Failed to execute command for non data transfer:
+ATA COMMAND BLOCK:
+AtaCommand: 160
+AtaFeatures: 0
+AtaSectorNumber: 0
+AtaCylinderLow: FF
+AtaCylinderHigh: FF
+AtaDeviceHead: 0
+AtaSectorNumberExp: 0
+AtaCylinderLowExp: 0
+AtaCylinderHighExp: 0
+AtaFeaturesExp: 0
+AtaSectorCount: 0
+AtaSectorCountExp: 0
+ATA STATUS BLOCK:
+AtaStatus: 65
+AtaError: 32
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 9CA1190
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 9C9A9E0
+InstallProtocolInterface: 348C4D62-BFBD-4882-9ECE-C80BB1C4783B 0
