@@ -1,9 +1,8 @@
 #![no_std]
 #![no_main]
 
-use log::{error, info, warn};
+use log::info;
 use uefi::prelude::*;
-use uefi_services::system_table;
 mod cfg_table_type;
 use crate::cfg_table_type::CfgTableType;
 
