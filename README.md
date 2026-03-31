@@ -63,4 +63,4 @@ Lubun is currently in an early **Initial Boot Stage**. The loader is capable of 
 
 ## License
 
-See the [LICENSE](license) file for project-specific licensing information.
+See the [LICENSE](LICENSE) file for project-specific licensing information.
