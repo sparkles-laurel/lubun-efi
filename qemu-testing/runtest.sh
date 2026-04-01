@@ -7,6 +7,7 @@ cd $(dirname $0)
 exec qemu-system-x86_64 -enable-kvm -machine q35 \
     -drive if=pflash,format=raw,readonly=on,file=OVMF_CODE.fd \
     -drive if=pflash,format=raw,readonly=on,file=OVMF_VARS.fd \
-    -drive format=raw,file=fat:rw:esp
+    -drive format=raw,file=fat:rw:esp \
+    -serial stdio
 
 popd
