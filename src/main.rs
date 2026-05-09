@@ -4,6 +4,8 @@
 mod cfg_table_type;
 mod identity_acpi_handler;
 mod kernel_args;
+mod kernel;
+
 // Use the abstracted log interface for console output
 #[allow(unused_imports)]
 use log::{error, info, warn};
@@ -72,7 +74,9 @@ fn hello_main(image_handle: Handle, mut system_table: SystemTable<Boot>) -> Stat
 
     info!("Got memory");
     info!("karg after MemMap: {:?}", karg);
-    wait_for_keypress(&mut system_table).unwrap();
-    // Tell the UEFI firmware we exited without error
-    Status::SUCCESS
+    
+    info!("=== Exiting UEFI, handing off to kernel ===");
+    
+    // Hand off to kernel - this never returns
+    kernel::start_kernel(karg)
 }
