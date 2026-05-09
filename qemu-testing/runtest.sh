@@ -4,6 +4,8 @@
 pushd `pwd`
 cd $(dirname $0)
 
+cp ../target/x86_64-unknown-uefi/debug/uefiloader.efi esp/EFI/BOOT/BOOTX64.EFI
+
 exec qemu-system-x86_64 -enable-kvm -machine q35 \
     -drive if=pflash,format=raw,readonly=on,file=OVMF_CODE.fd \
     -drive if=pflash,format=raw,readonly=on,file=OVMF_VARS.fd \

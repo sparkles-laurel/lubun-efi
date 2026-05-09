@@ -15,7 +15,7 @@ use acpi::AcpiTables;
 use acpi::mcfg::PciConfigRegions;
 
 use crate::identity_acpi_handler::IdentityAcpiHandler;
-use crate::kernel_args::KernelArgs;
+use crate::kernel_args::{KernelArgs, get_mm};
 
 fn wait_for_keypress(st: &mut SystemTable<Boot>) -> uefi::Result {
     info!("Press a key to contine...");
@@ -58,12 +58,21 @@ fn hello_main(image_handle: Handle, mut system_table: SystemTable<Boot>) -> Stat
     info!("ACPI Revision: {}", acpi_tables.revision);
 
     let pcie_cfg = PciConfigRegions::new(&acpi_tables).unwrap();
-    let pcie_first_addr = pcie_cfg.physical_address(0, 0, 0, 0).unwrap();
+    for sg in 0u16..=65535u16 {
+        if let Some(addr) = pcie_cfg.physical_address(sg, 0, 0, 0) {
+            karg.set_pcie(addr as *mut core::ffi::c_void);
+            break;
+        }
+    }
 
-    info!("PCIe(0, 0, 0, 0): {:#018x}", pcie_first_addr);
+    info!("karg after PCIe: {:?}", karg);
 
+    let (mm_ptr, count) = get_mm(&system_table);
+    karg.set_memmap(mm_ptr, count);
+
+    info!("Got memory");
+    info!("karg after MemMap: {:?}", karg);
     wait_for_keypress(&mut system_table).unwrap();
-
     // Tell the UEFI firmware we exited without error
     Status::SUCCESS
 }
