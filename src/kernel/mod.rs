@@ -9,12 +9,18 @@
 
 pub mod memory;
 pub mod log;
+pub mod stack;
+pub mod timer;
 
 use crate::kernel_args::KernelArgs;
+use self::stack::StackManager;
+use self::timer::Timer;
 
 /// The main Kernel struct that orchestrates all kernel subsystems
 pub struct Kernel {
     memory_manager: memory::VirtualMemoryManager,
+    stack_manager: StackManager,
+    timer: Timer,
 }
 
 impl Kernel {
@@ -51,8 +57,14 @@ impl Kernel {
         
         log::info!("Virtual memory initialized: {} entries in memory map", kargs.get_memmap_entries());
         
+        // Initialize stack manager and timer (required for task scheduling)
+        let stack_manager = StackManager::init();
+        let timer = Timer::init();
+        
         Kernel {
             memory_manager,
+            stack_manager,
+            timer,
         }
     }
     
@@ -79,6 +91,26 @@ impl Kernel {
     /// Get mutable reference to the virtual memory manager
     pub fn memory_manager_mut(&mut self) -> &mut memory::VirtualMemoryManager {
         &mut self.memory_manager
+    }
+
+    /// Get reference to the stack manager
+    pub fn stack_manager(&self) -> &StackManager {
+        &self.stack_manager
+    }
+
+    /// Get mutable reference to the stack manager
+    pub fn stack_manager_mut(&mut self) -> &mut StackManager {
+        &mut self.stack_manager
+    }
+
+    /// Get reference to the timer
+    pub fn timer(&self) -> &Timer {
+        &self.timer
+    }
+
+    /// Get mutable reference to the timer
+    pub fn timer_mut(&mut self) -> &mut Timer {
+        &mut self.timer
     }
 }
 
