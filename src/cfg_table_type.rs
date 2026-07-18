@@ -1,7 +1,8 @@
+#![allow(dead_code)]
+
 use core::format_args;
 use uefi::{Guid, guid};
 
-#[allow(unused)]
 #[derive(Debug)]
 pub struct CfgTableType(uefi::Guid);
 
