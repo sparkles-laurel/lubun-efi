@@ -1,5 +1,7 @@
+#![allow(unused)]
+
 /// Kernel logging without UEFI services
-/// 
+///
 /// Works after exiting UEFI boot services by writing directly to serial port.
 /// Note: Currently uses the log crate for compatibility during boot phase.
 /// After Phase 2, this will be replaced with direct serial output.
@@ -16,7 +18,7 @@ pub use log::info;
 #[cfg(test)]
 mod tests {
     use super::*;
-    
+
     fn serial_port_creation() {
         // Logging functions are re-exported from log crate
     }

@@ -47,30 +47,23 @@ impl KernelArgs {
 
         for cfg in cfg_tables {
             match cfg.guid {
-                ACPI2_GUID => {
-                    if self.acpi_ver < 2 {
-                        self.acpi_ver = 2;
-                        self.acpi_ptr = cfg.address;
-                    }
+                ACPI2_GUID if self.acpi_ver < 2 => {
+                    self.acpi_ver = 2;
+                    self.acpi_ptr = cfg.address;
                 }
-                ACPI_GUID => {
-                    if self.acpi_ver < 1 {
-                        self.acpi_ver = 1;
-                        self.acpi_ptr = cfg.address;
-                    }
+                ACPI_GUID if self.acpi_ver < 1 => {
+                    self.acpi_ver = 1;
+                    self.acpi_ptr = cfg.address;
                 }
-                SMBIOS3_GUID => {
-                    if self.smbios_ver < 3 {
-                        self.smbios_ver = 3;
-                        self.smbios_ptr = cfg.address;
-                    }
+                SMBIOS3_GUID if self.smbios_ver < 3 => {
+                    self.smbios_ver = 3;
+                    self.smbios_ptr = cfg.address;
                 }
-                SMBIOS_GUID => {
-                    if self.smbios_ver < 1 {
-                        self.smbios_ver = 1;
-                        self.smbios_ptr = cfg.address;
-                    }
+                SMBIOS_GUID if self.smbios_ver < 1 => {
+                    self.smbios_ver = 1;
+                    self.smbios_ptr = cfg.address;
                 }
+
                 _ => {}
             }
         }
